@@ -16,6 +16,7 @@
 		D491613E244E3B130076BA19 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D491613D244E3B130076BA19 /* main.m */; };
 		D4916148244E3B130076BA19 /* BackgroundLocationTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D4916147244E3B130076BA19 /* BackgroundLocationTestTests.m */; };
 		D4916153244E3B130076BA19 /* BackgroundLocationTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D4916152244E3B130076BA19 /* BackgroundLocationTestUITests.m */; };
+		D4916162244E3B9B0076BA19 /* LocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D4916161244E3B9B0076BA19 /* LocationManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D411F0EF244F363800A6516C /* Location.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Location.gpx; sourceTree = "<group>"; };
 		D4916128244E3B0E0076BA19 /* BackgroundLocationTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BackgroundLocationTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D491612B244E3B0E0076BA19 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D491612C244E3B0E0076BA19 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -54,6 +56,9 @@
 		D491614E244E3B130076BA19 /* BackgroundLocationTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BackgroundLocationTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4916152244E3B130076BA19 /* BackgroundLocationTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BackgroundLocationTestUITests.m; sourceTree = "<group>"; };
 		D4916154244E3B130076BA19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D4916160244E3B9B0076BA19 /* LocationManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocationManager.h; sourceTree = "<group>"; };
+		D4916161244E3B9B0076BA19 /* LocationManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocationManager.m; sourceTree = "<group>"; };
+		D4916164244F21BC0076BA19 /* mapstogpx20200421_123633.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = mapstogpx20200421_123633.gpx; path = ../../Downloads/mapstogpx20200421_123633.gpx; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +89,8 @@
 		D491611F244E3B0E0076BA19 = {
 			isa = PBXGroup;
 			children = (
+				D411F0EF244F363800A6516C /* Location.gpx */,
+				D4916164244F21BC0076BA19 /* mapstogpx20200421_123633.gpx */,
 				D491612A244E3B0E0076BA19 /* BackgroundLocationTest */,
 				D4916146244E3B130076BA19 /* BackgroundLocationTestTests */,
 				D4916151244E3B130076BA19 /* BackgroundLocationTestUITests */,
@@ -112,6 +119,8 @@
 				D4916132244E3B0E0076BA19 /* ViewController.m */,
 				D4916134244E3B0E0076BA19 /* Main.storyboard */,
 				D4916137244E3B130076BA19 /* Assets.xcassets */,
+				D4916160244E3B9B0076BA19 /* LocationManager.h */,
+				D4916161244E3B9B0076BA19 /* LocationManager.m */,
 				D4916139244E3B130076BA19 /* LaunchScreen.storyboard */,
 				D491613C244E3B130076BA19 /* Info.plist */,
 				D491613D244E3B130076BA19 /* main.m */,
@@ -268,6 +277,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D4916133244E3B0E0076BA19 /* ViewController.m in Sources */,
+				D4916162244E3B9B0076BA19 /* LocationManager.m in Sources */,
 				D491612D244E3B0E0076BA19 /* AppDelegate.m in Sources */,
 				D491613E244E3B130076BA19 /* main.m in Sources */,
 				D4916130244E3B0E0076BA19 /* SceneDelegate.m in Sources */,
@@ -440,8 +450,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7LTP6UZ89D;
+				DEVELOPMENT_TEAM = 2WGMHUL9V8;
 				INFOPLIST_FILE = BackgroundLocationTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -457,8 +468,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7LTP6UZ89D;
+				DEVELOPMENT_TEAM = 2WGMHUL9V8;
 				INFOPLIST_FILE = BackgroundLocationTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

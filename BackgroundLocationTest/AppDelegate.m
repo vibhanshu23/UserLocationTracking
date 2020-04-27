@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "LocationManager.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    if ([launchOptions objectForKey:UIApplicationLaunchOptionsLocationKey]) {
+        LocationManager *mngr = [[LocationManager alloc] init];
+        [mngr instantiateCurrentInstanceWithValues];
+        [mngr startUpdatingUserLocation];
+    
+    }
     return YES;
 }
 
